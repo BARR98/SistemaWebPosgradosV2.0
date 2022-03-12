@@ -1,0 +1,81 @@
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 80%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+button {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #013a63;
+    color: white;
+    transition: background-color .5s;
+}
+
+button:hover {
+    background-color: #096db4;
+}
+
+mat-card-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #003554;
+}
+
+mat-label {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: #051923;
+}
+
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #002b5c;
+}
+
+mat-card {
+    margin: 30px;
+}
+
+textarea {
+    height: 70px;
+}
+
+mat-expansion-panel {
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+mat-panel-title {
+    font-size: 18px;
+    color: #2e546e;
+    font-weight: bold;
+}
+
+mat-panel-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3c4347;
+}
+
+mat-label {
+    color: #256991;
+    font-weight: bold;
+}

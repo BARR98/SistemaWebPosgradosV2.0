@@ -1,0 +1,39 @@
+.main {
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.objetivo-general,
+.objetivos-especificos,
+.metas {
+    width: 100%;
+    max-width: 1000px;
+    align-items: start;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-subtitle {
+    font-size: 19px;
+    color: #013a63;
+}
+
+mat-card-title {
+    font-size: 22px;
+    color: #013a63;
+}
+
+mat-card {
+    border-radius: 10px;
+}

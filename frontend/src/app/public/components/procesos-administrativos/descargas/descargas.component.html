@@ -1,0 +1,43 @@
+<div class="main">
+
+    <mat-card class="documentacion-ingreso mat-elevation-z4">
+        <mat-card-title>Descargas</mat-card-title>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Documentos
+                    </mat-panel-title>
+                    <mat-panel-description>
+
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+
+                <table>
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Enlace</th>
+                    </thead>
+                    <tbody *ngFor="let descarga of descargas; let i = index">
+                        <td>{{descargas[i]['Descargas_nombre']}}</td>
+                        <td>
+                            <a href="{{descargas[i]['Descargas_enlace']}}">
+                                <mat-icon>
+                                    attachment
+                                </mat-icon>
+                            </a>
+                        </td>
+                    </tbody>
+                </table>
+
+
+
+
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+
+
+
+</div>

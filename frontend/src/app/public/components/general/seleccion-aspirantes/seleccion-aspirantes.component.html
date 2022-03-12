@@ -1,0 +1,32 @@
+<div class="main">
+
+    <mat-card class="documentacion-ingreso mat-elevation-z4">
+        <mat-card-title>Selección de aspirantes</mat-card-title>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Requisitos
+                    </mat-panel-title>
+                    <mat-panel-description>
+
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <hr>
+                <!--INTRODUCCIÓN-->
+
+                <p>{{seleccion_aspirantes['GPSA_start']}}</p>
+
+                <ng-container *ngFor="let requisito of seleccion_aspirantes['GPSA_requisitos']; let i = index">
+                    <p>{{seleccion_aspirantes['GPSA_requisitos'][i]}}</p>
+                </ng-container>
+
+
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+
+
+
+</div>

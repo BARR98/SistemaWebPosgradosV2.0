@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+
+.curriculum {
+    margin-top: 40px;
+    width: 50%;
+    height: auto;
+}
+
+mat-card {
+    width: 100%;
+    border-radius: 15px;
+}
+
+mat-card-header {
+    margin-top: 40px;
+}
+
+mat-card-title {
+    font-size: 20px;
+}
+
+mat-card-content {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+p {
+    font-size: 17px;
+}
+
+mat-card-actions {
+    margin-left: 20px;
+}
+
+a {
+    background-color: rgb(16, 67, 124);
+    color: white;
+    transition: background-color .5s
+}
+
+a:hover {
+    background-color: rgb(44, 89, 141);
+}

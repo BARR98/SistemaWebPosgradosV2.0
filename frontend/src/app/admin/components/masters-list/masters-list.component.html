@@ -1,0 +1,31 @@
+<mat-card class="mat-elevation-z4">
+    <mat-card-title>Maestrias</mat-card-title>
+    <a mat-raised-button (click)="redirectToMastersList()" id="create"> Crear nueva maestría
+        <mat-icon>add</mat-icon>
+    </a>
+
+    <table>
+
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Abreviatura</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let maestria of masters; let i=index">
+            <td>{{masters[i]['_id']}}</td>
+            <td>{{masters[i]['nombre_maestria']}}</td>
+            <td>{{masters[i]['abreviatura_maestria']}}</td>
+            <button mat-raised-button [routerLink]="['/admin/master-edit',masters[i]['_id']]">
+                <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-raised-button color="warn" class="delete" (click)="deleteMaster(masters[i]['_id'])">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </tr>
+    </table>
+
+
+
+
+</mat-card>

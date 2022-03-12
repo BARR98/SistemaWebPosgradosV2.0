@@ -1,0 +1,84 @@
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.data-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+.documento {
+    width: 65%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+}
+
+.image {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.data {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.actions {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 200px;
+    height: 250px;
+}
+
+a {
+    background-color: rgb(7, 49, 117);
+    color: white;
+    transition: background-color .5s;
+}
+
+a:hover {
+    background-color: rgb(10, 71, 168);
+}
+
+#title {
+    color: rgb(6, 40, 95);
+    font-weight: bold;
+}

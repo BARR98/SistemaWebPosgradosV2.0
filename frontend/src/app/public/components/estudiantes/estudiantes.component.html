@@ -1,0 +1,24 @@
+<div class="main">
+
+
+    <div class="card-section">
+        <mat-card class="mat-elevation-z4">
+            <mat-card-header>
+                <mat-card-title>Seleccione una generación</mat-card-title>
+            </mat-card-header>
+            <ng-container *ngFor="let alumno of alumnos; let i = index ">
+
+                <mat-accordion *ngIf=" alumnos[i]['generacion'] == i + 1 ">
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>Generación {{i + 1 }}</mat-expansion-panel-header>
+                        <button mat-raised-button [routerLink]="[ 'generacion-detail', _id , alumnos[i]['generacion'] ]">Ver</button>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </ng-container>
+
+        </mat-card>
+    </div>
+
+</div>
+
+<router-outlet></router-outlet>

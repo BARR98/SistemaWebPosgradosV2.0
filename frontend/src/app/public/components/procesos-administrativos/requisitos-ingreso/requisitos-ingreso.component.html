@@ -1,0 +1,60 @@
+<div class="main">
+    <mat-card class="requisitos-ingreso mat-elevation-z4">
+        <mat-card-title>Requisitos de ingreso</mat-card-title>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle (opened)="panelOpenState == true">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Requisitos
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Requisitos para ingresar a la maestría
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <!--INTRODUCCIÓN-->
+                <mat-panel-title>Introducción</mat-panel-title>
+                <p>{{PARI_documentacion_start}}</p>
+
+                <hr>
+
+                <!--REQUSITOS-->
+                <mat-panel-title>Requisitos</mat-panel-title>
+                <ng-container *ngFor="let requisito of PARI_requisitos; let i = index">
+                    <p>{{PARI_requisitos[i]}}</p>
+                </ng-container>
+
+
+
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+
+    <mat-card class="documentacion-ingreso mat-elevation-z4">
+        <mat-card-title>Documentación</mat-card-title>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Documentos
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Documentación para el ingreso a la maestría
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <!--INTRODUCCIÓN-->
+                <mat-panel-title>Introducción</mat-panel-title>
+                <p>{{PARI_documentacion_start}}</p>
+
+                <hr>
+
+                <!--REQUSITOS-->
+                <mat-panel-title>Docuemntos</mat-panel-title>
+                <ng-container *ngFor="let requisito of PARI_documentos; let i = index">
+                    <p>{{PARI_documentos[i]}}</p>
+                </ng-container>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+</div>

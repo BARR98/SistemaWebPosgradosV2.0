@@ -1,0 +1,124 @@
+mat-toolbar {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-size: 16px;
+    color: #013a63;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #013a63;
+    transition: background-color .5s;
+}
+
+.mat-menu-content .ng-tns-c44-0 {
+    padding: 0;
+}
+
+img {
+    width: 80px;
+    height: auto;
+}
+
+span {
+    margin-right: 3px;
+    color: #013a63;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 0px;
+}
+
+button {
+    width: auto;
+}
+
+#menu {
+    padding: 10px;
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-sep {
+    width: 200px;
+    height: 50px;
+}
+
+#logos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+}
+
+#master-name {
+    font-size: 22px;
+    width: 100%;
+    color: whitesmoke;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: #104369;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.back {
+    width: auto;
+    height: auto;
+}
+
+.name {
+    width: 85%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+}
+
+#back-button {
+    background-color: #1a5888;
+    color: whitesmoke;
+    transition: background-color .5s;
+}
+
+#back-button:hover {
+    background-color: #2870a7;
+}
+
+i {
+    color: whitesmoke;
+}

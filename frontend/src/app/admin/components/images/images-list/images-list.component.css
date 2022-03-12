@@ -1,0 +1,12 @@
+.card {}
+
+.card:hover {
+    box-shadow: 0px 0px 24px 22px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 24px 22px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 0px 24px 22px rgba(0, 0, 0, 0.16);
+}
+
+button {
+    color: whitesmoke;
+    background-color: #05558f;
+}

@@ -1,0 +1,72 @@
+.main {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.docentes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin-top: 30px;
+}
+
+.crop-image {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: 100px;
+}
+
+a {
+    background-color: rgb(6, 73, 128);
+    color: white;
+    transition: background-color .5s;
+}
+
+a:hover {
+    background-color: rgb(8, 104, 182);
+}
+
+.mat-card-title {
+    color: rgb(6, 73, 128)
+}
+
+mat-card-subtitle {
+    text-align: justify;
+}
+
+mat-card-header {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.docente-data {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+}
+
+mat-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+}

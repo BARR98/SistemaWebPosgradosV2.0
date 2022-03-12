@@ -1,0 +1,25 @@
+<div class="main">
+
+    <div class="data-section">
+        <ng-container *ngFor="let tesis of repositorio_tesis;  let i = index">
+            <div class="documento">
+
+                <div class="image"><img src="../../../../assets/images/prueba.jpg" alt="" srcset=""></div>
+                <div class="info">
+                    <div class="data" id="title">{{repositorio_tesis[i]['DTitulo']}}</div>
+                    <div class="data">Típo: {{repositorio_tesis[i]['DTipo']}}</div>
+                    <div class="data">Autores: {{repositorio_tesis[i]['DAutores']}}</div>
+                    <div class="data">Fecha: {{repositorio_tesis[i]['DFecha']}}</div>
+                    <div class="data">Resumen: {{repositorio_tesis[i]['DResumen']}}</div>
+                    <div class="actions">
+                        <a mat-raised-button href="{{repositorio_tesis[i]['DEnlace']}}">Ver documento</a>
+                    </div>
+                </div>
+
+            </div>
+        </ng-container>
+    </div>
+
+
+
+</div>

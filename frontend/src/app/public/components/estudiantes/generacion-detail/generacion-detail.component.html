@@ -1,0 +1,37 @@
+<div class="main">
+    <div class="generaciones">
+
+        <ng-container *ngFor="let alumno of alumnos; let i = index">
+            <mat-card class="mat-elevation-z4" *ngIf="alumnos[i]['generacion'] == generacion">
+                <mat-card-header>
+                    <mat-card-title>{{alumnos[i]['ENombre']}}</mat-card-title>
+                </mat-card-header>
+
+                <div class="crop-image">
+                    <img src="../../../../../assets/images/profile2.png" alt="" srcset="">
+                </div>
+
+                <mat-card-content>
+                    <p>
+                        Tema de tésis: {{alumnos[i]['ETema_tesis']}}
+                    </p>
+                    <p>
+                        Director de tésis: {{alumnos[i]['EDirector_tesis']}}
+                    </p>
+                    <p>
+                        Tutor: {{alumnos[i]['ETutor']}}
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </ng-container>
+
+    </div>
+
+    <div class="actions-button">
+        <a mat-raised-button [routerLink]=" ['/public' , _id , 'estudiantes' ]">
+            <i class="material-icons">
+                arrow_back
+            </i> Atras
+        </a>
+    </div>
+</div>

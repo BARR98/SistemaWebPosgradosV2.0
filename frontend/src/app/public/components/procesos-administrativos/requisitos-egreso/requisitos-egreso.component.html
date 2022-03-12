@@ -1,0 +1,65 @@
+<div class="main">
+
+    <mat-card class="documentacion-ingreso mat-elevation-z4">
+        <mat-card-title>Obtención de grado</mat-card-title>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Requisitos
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Requisitos para la obtención de grado
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <!--INTRODUCCIÓN-->
+                <mat-panel-title>Introducción</mat-panel-title>
+                <p>{{PARE_start}}</p>
+
+                <hr>
+
+                <!--REQUSITOS-->
+                <mat-panel-title>Requisitos</mat-panel-title>
+                <ng-container *ngFor="let requisito of PARE_requisitos; let i = index">
+                    <p>{{PARE_requisitos[i]}}</p>
+                </ng-container>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+
+    <mat-card class="requisitos-ingreso mat-elevation-z4">
+        <mat-card-title>Exámen de grado</mat-card-title>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle (opened)="panelOpenState == true">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Requisitos
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Requisitos para exámen de grado
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+
+                <!--INTRODUCCIÓN-->
+                <mat-panel-title>Introducción</mat-panel-title>
+                <p>{{PARE_obtencion_grado_start}}</p>
+
+                <hr>
+
+                <!--REQUSITOS-->
+                <mat-panel-title>Requisitos</mat-panel-title>
+                <ng-container *ngFor="let requisito of PARE_obtencion_grado_requisitos; let i = index">
+                    <p>{{PARE_obtencion_grado_requisitos[i]}}</p>
+                </ng-container>
+
+
+
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+
+
+</div>

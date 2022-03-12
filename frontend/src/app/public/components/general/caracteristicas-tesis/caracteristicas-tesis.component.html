@@ -1,0 +1,38 @@
+<div class="main">
+
+    <mat-card class="documentacion-ingreso mat-elevation-z4">
+        <mat-card-title>Cracterísticas de tésis</mat-card-title>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Lineamientos
+                    </mat-panel-title>
+                    <mat-panel-description>
+
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <!--INTRODUCCIÓN-->
+                <mat-panel-title>
+                    Introducción
+                </mat-panel-title>
+
+                <p>{{start}}</p>
+
+                <hr>
+
+                <!--REQUISITOS-->
+
+                <ng-container *ngFor="let requisito of requisitos; let i = index">
+                    <p>{{requisitos}}</p>
+                </ng-container>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+
+
+
+
+</div>

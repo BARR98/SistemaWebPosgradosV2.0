@@ -1,0 +1,163 @@
+.main {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.sintesis-plan-estudio {
+    width: 60%;
+    height: auto;
+}
+
+.materias {
+    width: 37%;
+    max-width: 1000px;
+    align-items: start;
+    height: auto;
+}
+
+.sintesis-plan-estudio {
+    padding: 15px;
+}
+
+.asignaturas_basicas,
+.asignaturas_optativas,
+.seminario-tesis {
+    width: 100%;
+    max-width: 1000px;
+    align-items: start;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.header-table {
+    color: #0467ad;
+}
+
+mat-card-subtitle {
+    font-size: 19px;
+    color: #013a63;
+}
+
+mat-card-title {
+    font-size: 22px;
+    color: white;
+}
+
+.data {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.divider {
+    margin-bottom: 40px;
+}
+
+.asignaturas-title {
+    color: #054675;
+}
+
+mat-divider {
+    background-color: #033152;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+mat-toolbar {
+    background-color: #033152;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+mat-card {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    height: auto;
+}
+
+tr {
+    transition: background-color .5s;
+    display: flex;
+    justify-content: space-between;
+}
+
+tr:hover {
+    background-color: #f3f1f1;
+    display: flex;
+    justify-content: space-between;
+}
+
+td {
+    font-size: 15px;
+}
+
+tbody,
+table {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.perfil-ingreso,
+.perfil-egreso {
+    width: 85%;
+    margin-top: 40px;
+}
+
+mat-card-title {
+    font-size: 25px;
+    color: #013a63;
+    margin-bottom: 30px;
+}
+
+mat-panel-title {
+    font-size: 20px;
+    color: #0b5386;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+mat-panel-description {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #1c679c;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+mat-card,
+mat-expansion-panel {
+    border-radius: 20px;
+    overflow: scroll;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,38 @@
+<div class="main">
+
+    <div class="docentes">
+
+        <ng-container *ngFor="let docente of docentes;  let i = index">
+            <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                    <div class="docente-data">
+                        <mat-card-title>{{docentes[i]['DNombre']}}</mat-card-title>
+                    </div>
+                    <div class="docente-data">
+                        <mat-card-subtitle>Grado académico: {{docentes[i]['DGrado_academico']}}</mat-card-subtitle>
+                    </div>
+                    <div class="docente-data">
+                        <mat-card-subtitle>Especialidad: {{docentes[i]['DEspecialidad']}}</mat-card-subtitle>
+                    </div>
+                    <div class="docente-data">
+                        <mat-card-subtitle>Tiempo: {{docentes[i]['DTiempo']}}</mat-card-subtitle>
+                    </div>
+
+
+
+
+                </mat-card-header>
+                <div class="crop-image">
+                    <img src="../../../../../assets/images/profile2.png" alt="" srcset="">
+                </div>
+                <mat-card-content>
+                    <p></p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a mat-raised-button [routerLink]="[ 'curriculum-detail', _id , docentes[i]['DNombre'] ]">Ver curriculum</a>
+                </mat-card-actions>
+            </mat-card>
+        </ng-container>
+
+    </div>
+</div>

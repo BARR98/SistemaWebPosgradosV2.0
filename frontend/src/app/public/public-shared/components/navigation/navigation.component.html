@@ -1,0 +1,275 @@
+<mat-toolbar>
+
+    <div class="row" id="logos">
+
+        <!--LOGO SEP-->
+        <div class="logo">
+            <img src="../../../../../assets/logos/logosep.png" alt="" id="logo-sep">
+        </div>
+
+        <!--LOGO TECNM-->
+        <div class="logo">
+            <img src="../../../../../assets/logos/logotecnm.png" alt="">
+
+        </div>
+
+        <!--LOGO ITZ-->
+        <div class="logo">
+
+            <img src="../../../../../assets/logos/itz.png" alt="">
+        </div>
+
+        <!--LOGO TECNM-->
+        <div class="logo">
+            <img src="../../../../../assets/logos/logoconacyt.png" alt="">
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="row" id="master-name">
+        <div class="back">
+            <button mat-raised-button id="back-button" routerLink="">
+                <i class="material-icons">arrow_back</i>
+                Maestrías
+            </button>
+        </div>
+        <div class="name">
+            {{nombre_maestria}}
+        </div>
+
+    </div>
+
+</mat-toolbar>
+
+
+
+<mat-toolbar id="menu">
+
+    <div class="row">
+        <!--HOME-->
+        <div class="col">
+
+            <button mat-button routerLink="home">
+                <span class="material-icons align-middle ">
+                    home
+                </span>
+                Inicio
+            </button>
+
+        </div>
+
+        <!--GENERAL-->
+        <div class="col">
+
+            <button mat-button [matMenuTriggerFor]="general">
+                <span class="material-icons align-middle ">
+                    history_edu
+                  </span>
+                General
+        
+                </button>
+
+            <mat-menu #general="matMenu">
+
+                <button mat-menu-item routerLink="general-perfiles" class="sub-menu-item">
+                    <span class="material-icons align-middle ">
+                        perm_identity
+                    </span>
+                    Perfiles
+                    
+                </button>
+
+                <button mat-menu-item routerLink="general-objetivos-metas" class="sub-menu-item">
+                    <span class="material-icons align-middle ">
+                        fact_check
+                      </span>
+                      Objetivos y metas
+                </button>
+
+                <button mat-menu-item routerLink="general-planes-estudio" class="sub-menu-item">
+                    <span class="material-icons align-middle  ">
+                        book
+                    </span>
+                    Planes de estudio
+                </button>
+
+                <button mat-menu-item routerLink="lgac" class="sub-menu-item">
+                    <span class="material-icons align-middle  ">
+                        file_present
+                    </span>
+                   LGAC
+                </button>
+
+                <button mat-menu-item routerLink="seleccion-aspirantes" class="sub-menu-item">
+                    <span class="material-icons align-middle ">
+                        offline_pin
+                    </span>
+                   Selección de aspirantes
+                </button>
+
+                <button mat-menu-item routerLink="caracteristicas-tesis" class="sub-menu-item">
+                    <span class="material-icons align-middle ">
+                        import_contacts
+                    </span>
+                   Características tésis 
+                </button>
+
+            </mat-menu>
+        </div>
+
+        <!--PROCESOS ADMINISTRATIVOS-->
+        <div class="col">
+
+            <button mat-button [matMenuTriggerFor]="procesosAdministrativos">
+                <span class="material-icons align-middle  ">
+                    integration_instructions
+                </span>
+                Procesos administratvios
+            </button>
+            <mat-menu #procesosAdministrativos="matMenu">
+
+                <button mat-menu-item routerLink="procesos-administrativos-requisitos-ingreso">
+                    <span class="material-icons align-middle ">
+                        arrow_forward
+                    </span>
+                        Requisitos de ingreso
+                </button>
+
+                <button mat-menu-item routerLink="procesos-administrativos-requisitos-permanencia">
+                    <span class="material-icons  align-middle">
+                        last_page
+                    </span>
+                        Requisitos de permanencia
+                </button>
+
+                <button mat-menu-item routerLink="procesos-administrativos-requisitos-egreso">
+                    <span class="material-icons  align-middle">
+                        west
+                    </span>
+                    Requisitos de egreso
+                </button>
+
+                <button mat-menu-item routerLink="procesos-administrativos-becas">
+                    <span class="material-icons  align-middle">
+                        topic
+                    </span>
+                    Becas
+                </button>
+
+                <button mat-menu-item routerLink="procesos-administrativos-descargas">
+                    <span class="material-icons align-middle ">
+                        arrow_circle_down
+                    </span>
+                    Descargas
+                </button>
+
+
+
+
+            </mat-menu>
+        </div>
+
+        <!--NUCELO ACADEMICO-->
+        <div class="col">
+
+            <button mat-button routerLink="nucleo-academico">
+                <span class="material-icons align-middle ">
+                    school
+                </span>
+                Núcleo académico
+            </button>
+
+        </div>
+
+        <!--REPOSITORIO TESIS-->
+        <div class="col">
+
+            <button mat-button routerLink="repositorio-tesis">
+                        <span class="material-icons align-middle ">
+                            book
+                        </span>
+                          Repositorio de tésis
+                    </button>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="row">
+
+        <!--ALUMNOS-->
+        <div class="col">
+            <button mat-button routerLink="estudiantes">
+                                <span class="material-icons align-middle ">
+                                    people_outline
+                                </span>
+                                Estudiantes
+                            </button>
+        </div>
+
+        <!--VINCULACIÓN-->
+        <div class="col">
+            <button mat-button routerLink="vinculacion">
+                        <span class="material-icons align-middle ">
+                            public
+                        </span>
+                        Vinculación
+                    </button>
+
+        </div>
+
+        <!--NORMAS Y ESTATUTOS-->
+        <div class="col">
+            <button mat-button routerLink="normas-estatutos">
+                <span class="material-icons align-middle ">
+                    article
+                </span>
+                Normas y estatutos
+            </button>
+        </div>
+
+        <!--CONTACTO-->
+        <div class="col">
+
+            <button mat-button routerLink="contacto">
+                <span class="material-icons align-middle ">
+                    connect_without_contact
+                </span>
+                  Contacto
+            </button>
+        </div>
+
+
+
+        <!--LOGIN-->
+        <div class="col">
+
+            <button mat-button routerLink="login">
+                <span class="material-icons align-middle ">
+                    login
+                </span>
+                 Login
+            </button>
+
+        </div>
+
+
+    </div>
+
+</mat-toolbar>
+
+
+
+
+<router-outlet></router-outlet>

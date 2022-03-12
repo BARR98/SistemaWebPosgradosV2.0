@@ -1,0 +1,32 @@
+<div class="main">
+    <div class="row" *ngIf="!image; else main_Content">
+        <h1>Loading...</h1>
+    </div>
+
+    <ng-template #main_Content class="mt-4">
+        <div class="row mt-4 mb-4">
+            <div class="col-md-5">
+                <div class="card">
+                    <img [src]="'http://localhost:4000/' + image.imagePath" alt="" class="img-card-top w-100">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <form class="card-body">
+                    <div class="form-gropu">
+                        <input type="text" class="form-control" placeholder="image's title" [value]="image.title" readonly>
+                    </div>
+                    <div class="form-gropu">
+                        <textarea rows="2" class="form-control" placeholder="image's description" [value]="image.description" readonly></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card-actions">
+            <button class="btn btn-danger" (click)="deleteimage(id)">Delete</button>
+        </div>
+
+    </ng-template>
+</div>

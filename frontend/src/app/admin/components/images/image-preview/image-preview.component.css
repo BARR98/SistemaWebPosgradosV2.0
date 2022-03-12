@@ -1,0 +1,27 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ng-template {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}

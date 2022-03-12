@@ -1,0 +1,54 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toolbar-section {
+    width: 100%;
+}
+
+mat-toolbar {
+    display: flex;
+    justify-content: center;
+    color: #01497c;
+    font-size: 30px;
+}
+
+.card-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+mat-card {
+    width: 50%;
+    height: 80%;
+    background-color: #f4f6f8;
+}
+
+mat-expansion-panel-header {
+    color: #023b64;
+}
+
+mat-card-title {
+    color: #01497c;
+}
+
+mat-expansion-panel {
+    margin: 30px;
+}
+
+button {
+    background-color: #01497c;
+    transition: background-color .5s;
+    color: whitesmoke;
+}
+
+button:hover {
+    background-color: #2c7da0;
+}

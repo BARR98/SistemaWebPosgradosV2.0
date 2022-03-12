@@ -1,0 +1,85 @@
+<div class="main ">
+    <mat-card class="mat-elevation-z4">
+
+        <mat-card-content>
+            <div class="image">
+                <img src="../../../../assets//images/image2.png" alt="">
+            </div>
+            <div class="info">
+                {{objetivo_general}}
+            </div>
+        </mat-card-content>
+
+        <mat-card-footer>
+
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Costos
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Información sobre los costos
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+
+                    <!--TABLA DE DATOS-->
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <th>Trámite</th>
+                                <th>Cósto</th>
+                            </thead>
+                            <tbody *ngFor="let tramite of tramites; let i = index;">
+                                <tr>
+                                    <td>
+                                        {{tramites[i]['GTNombre']}}
+                                    </td>
+                                    <td>
+                                        {{tramites[i]['GTCosto']}} MXN$
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Fechas
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Información sobre las fechas
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+
+                    <!--TABLA DE DATOS-->
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <th>Proceso</th>
+                                <th>Fecha</th>
+                            </thead>
+                            <tbody *ngFor="let proceso of procesos; let i = index;">
+                                <tr>
+                                    <td>
+                                        {{procesos[i]['GFNombreTramite']}}
+                                    </td>
+                                    <td>
+                                        {{procesos[i]['GFTramiteFecha']}}
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </mat-card-footer>
+
+
+    </mat-card>
+</div>
