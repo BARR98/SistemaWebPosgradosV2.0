@@ -1,7 +1,7 @@
 import { Router } from 'express'
 const router = Router();
 
-import upload from '../libs/multer'
+import upload from '../lib-upload-logo/multer'
 import { getPhotos, createPhoto, deletePhoto, getPhoto, updatePhoto } from '../controllers/photo.controller'
 
 // middleware

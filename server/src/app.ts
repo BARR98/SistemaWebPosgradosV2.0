@@ -5,10 +5,10 @@ import path from 'path';
 import cors from 'cors'
 
 // Routes
-import indexRoutes from './routes';
-import tasksRoutes from './routes/tasks';
 import imageRoutes from './routes/photos'
 import masterRoutes from './routes/maestrias'
+import filesRoutes from './routes//files'
+
 class Applicaction {
 
     app: express.Application;
@@ -20,6 +20,8 @@ class Applicaction {
         this.routes();
         // this folders for this application will be used to store public file images
         this.app.use('/logos', express.static(path.resolve('logos')));
+        this.app.use('/uploaded-files', express.static(path.resolve('uploades-files')));
+
 
     }
 
@@ -37,10 +39,9 @@ class Applicaction {
     }
 
     routes() {
-        this.app.use('/tasks', tasksRoutes)
         this.app.use('/images', imageRoutes );
         this.app.use('/masters', masterRoutes );
-        
+        this.app.use('/files', filesRoutes );
     }
 
     
