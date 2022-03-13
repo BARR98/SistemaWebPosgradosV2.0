@@ -14,8 +14,8 @@ export async function getPhotos(req: Request, res: Response): Promise<Response> 
 
 export async function createPhoto(req: Request, res: Response): Promise<Response> {
     try{
-        const { title, description } = req.body;
-        const newPhoto = { title, description, imagePath: req.file.path};
+        const { title, description , master  } = req.body;
+        const newPhoto = { title, description , master , imagePath: req.file.path};
         const photo = new Photo(newPhoto);
         await photo.save();
         return res.json({
@@ -44,15 +44,3 @@ export async function deletePhoto(req: Request, res: Response): Promise<Response
     return res.json({ message: 'Photo Deleted' });
 };
 
-export async function updatePhoto(req: Request, res: Response): Promise<Response> {
-    const { id } = req.params;
-    const { title, description } = req.body;
-    const updatedPhoto = await Photo.findByIdAndUpdate(id, {
-        title,
-        description
-    });
-    return res.json({
-        message: 'Successfully updated',
-        updatedPhoto
-    });
-}

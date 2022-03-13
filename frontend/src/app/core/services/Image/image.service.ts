@@ -11,8 +11,9 @@ export class ImageService {
     
   }
 
-  createImage(title: string , description:string , Image:File) {
+  createImage(title: string , description:string , Image:File , master:string) {
     const fd = new FormData();
+    fd.append('master',master);
     fd.append('title',title);
     fd.append('description',description);
     fd.append('image',Image)

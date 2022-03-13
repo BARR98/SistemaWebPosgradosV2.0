@@ -2,7 +2,7 @@ import { Router } from 'express'
 const router = Router();
 
 import upload from '../lib-upload-logo/multer'
-import { getPhotos, createPhoto, deletePhoto, getPhoto, updatePhoto } from '../controllers/photo.controller'
+import { getPhotos, createPhoto, deletePhoto, getPhoto} from '../controllers/photo.controller'
 
 // middleware
 // router.use(upload.single('image'));
@@ -17,6 +17,5 @@ router.route('/')
 router.route('/:id')
     .get(getPhoto)
     .delete(deletePhoto)
-    .put(updatePhoto);
 
 export default router;

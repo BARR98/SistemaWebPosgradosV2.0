@@ -1,0 +1,27 @@
+<div class="main">
+
+    <section class="title">
+        <h1>Imagenes de la maestría {{master_name}}</h1>
+    </section>
+
+    <section class="images-list" *ngFor="let photo of photos; let i = index">
+        <div class="col-md-4">
+            <mat-card *ngIf="photos[i]['master'] == master_name" class="p-4 mb-4">
+                <mat-card-header>
+                    <h1>{{photos[i]['title']}}</h1>
+                </mat-card-header>
+                <mat-card-content class="img-fluid">
+                    <img [src]="'http://localhost:4000/' + photo.imagePath" class="img-card-top w-100">
+                    <span>{{photos[i]['description']}}</span>
+                </mat-card-content>
+                <mat-card-footer class="p-4">
+                    <button class="btn btn-danger" (click)="deleteimage(photos[i]['_id'])">Delete</button>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+    </section>
+
+
+
+
+</div>

@@ -8,6 +8,7 @@ import { UserComponent } from './components/user/user.component';
 import { ImagesListComponent } from './components/images/images-list/images-list.component';
 import { ImageFormComponent } from './components/images/image-form/image-form.component';
 import { ImagePreviewComponent } from './components/images/image-preview/image-preview.component';
+import { ViewMasterImagesComponent } from './components/images/view-master-images/view-master-images.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'logo-preview/:id',
     component:ImagePreviewComponent
+  },
+  {
+    path: 'view-master-images/:master',
+    component:ViewMasterImagesComponent
   },
   {
     path: '',

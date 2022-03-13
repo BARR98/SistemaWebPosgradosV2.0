@@ -9,6 +9,7 @@ import { ImageService } from 'src/app/core/services/Image/image.service';
 })
 export class ImagesListComponent implements OnInit {
 
+  masters = ["MSC","MARQ","MADM"]
   photos:any;
   constructor(private imageService : ImageService,
     private router : Router) { }
@@ -21,8 +22,8 @@ export class ImagesListComponent implements OnInit {
       })
   }
 
-  selectedCard(id:string){
-    this.router.navigate(['/admin/logo-preview',id])
+  selectedCard(master:string){
+    this.router.navigate(['/admin/view-master-images',master])
   }
 
 

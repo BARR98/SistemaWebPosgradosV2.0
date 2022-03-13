@@ -13,9 +13,10 @@ import { UserComponent } from './components/user/user.component';
 import { ImageFormComponent } from './components/images/image-form/image-form.component';
 import { ImagesListComponent } from './components/images/images-list/images-list.component';
 import { ImagePreviewComponent } from './components/images/image-preview/image-preview.component';
+import { ViewMasterImagesComponent } from './components/images/view-master-images/view-master-images.component';
 
 @NgModule({
-  declarations: [ AdminLayoutComponent,MastersListComponent, AdminHomeComponentComponent,CreateComponentComponent, EditMasterComponent, UserComponent, ImageFormComponent, ImagesListComponent, ImagePreviewComponent],
+  declarations: [ AdminLayoutComponent,MastersListComponent, AdminHomeComponentComponent,CreateComponentComponent, EditMasterComponent, UserComponent, ImageFormComponent, ImagesListComponent, ImagePreviewComponent, ViewMasterImagesComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,

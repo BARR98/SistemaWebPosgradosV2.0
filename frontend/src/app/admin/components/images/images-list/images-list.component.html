@@ -5,16 +5,14 @@
         </mat-icon>
     Nuevo Logo</button>
 </div>
-<div class="row">
-    <div class="col-md-4 p-4" *ngFor="let photo of photos; let i = index">
-        <div class="card card-photo mat-elevation-z4" (click)="selectedCard(photo._id)">
-            <div class="card-header">
-                <h1>{{photo.title}}</h1>
-            </div>
-            <img [src]="'http://localhost:4000/' + photo.imagePath" class="img-card-top w-100">
-            <div class="card-body">
-                <h3>{{photo.description}}</h3>
-            </div>
-        </div>
-    </div>
+
+<div class="select-master ">
+    <mat-card class="p-4 text-fluid" *ngFor="let master of masters; let i = index">
+        <mat-card-header>
+            <h1>{{master}}</h1>
+        </mat-card-header>
+        <mat-card-content>
+            <button mat-raised-button (click)="selectedCard(master) ">Ver imagenes</button>
+        </mat-card-content>
+    </mat-card>
 </div>

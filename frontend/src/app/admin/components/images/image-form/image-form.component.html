@@ -4,16 +4,24 @@
             <h1>Subir Nuevo Logo</h1>
         </div>
         <div class="card-body">
-            <form (submit)="uploadPhoto(title,description)">
+            <form (submit)="uploadPhoto(title,description,master)">
+                <div class="form-group">
+                    <select id="role" class="form-control" required #master>
+                       <option *ngFor="let role of roles;let i = index" [value]="roles[i]">
+                        {{roles[i]}}
+                    </option>                                
+                    </select>
+                </div>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Nombre" #title required>
                 </div>
                 <div class="form-group">
                     <textarea rows="2" placeholder="Descripción" class="form-control" required #description></textarea>
                 </div>
-                <input type="file" class="d-none " (change)="onPhotoSelected($event)" #photoInput>
-                <img [src]=" photoSelected || '../../../../assets/images/image2.png'" class="img-fluid" alt="" (click)="photoInput.click()">
-
+                <div class="image-preview">
+                    <input type="file" class="d-none " (change)="onPhotoSelected($event)" #photoInput>
+                    <img [src]=" photoSelected || '../../../../assets/images/image2.png'" class="img-fluid" alt="" (click)="photoInput.click()">
+                </div>
                 <button class="btn btn-primary w-100 mt-4">Upload</button>
             </form>
         </div>

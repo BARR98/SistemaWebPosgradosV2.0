@@ -15,11 +15,12 @@ interface HtmlInputEvent extends Event {
 export class ImageFormComponent implements OnInit {
   file!: File;
   photoSelected: string | ArrayBuffer | any;
-
+  roles = ["Selecione una maestría","MSC","MARQ","MADM"];
   constructor(private imageService : ImageService,
     private router : Router) { }
 
   ngOnInit(): void {
+    console.log(this.roles)
   }
 
   onPhotoSelected(event: HtmlInputEvent | any):void{
@@ -33,19 +34,20 @@ export class ImageFormComponent implements OnInit {
     }
   }
 
-  uploadPhoto(title: HTMLInputElement,description: HTMLTextAreaElement): boolean{
+  uploadPhoto(title: HTMLInputElement,description: HTMLTextAreaElement , master: HTMLSelectElement): boolean{
     console.log(title.value)
     console.log(description.value);
+    console.log(master.value)
+    console.log( master.value == this.roles[0])
   
-
-    if((title.value != '') && (description.value!='') && (this.file != null) ){
-      this.imageService.createImage(title.value,description.value,this.file)
+    
+    if((title.value != '') && (description.value!='') && (this.file != null) && ( (master.value !== this.roles[0]) ) ){
+      this.imageService.createImage(title.value,description.value,this.file,master.value)
       .subscribe(res => {
         this.router.navigate(['/admin/logos'])
       }, err => console.log(err))
       return false;
     }
     alert("Complete todos los campos.")
-    }
-
+  }
 }

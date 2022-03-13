@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.images-list {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
