@@ -10,7 +10,22 @@
 }
 
 .title {
+    background-color: #0e4674;
+    color: whitesmoke;
     display: flex;
     justify-content: center;
-    padding: 30px;
+}
+
+mat-card-header {
+    color: #0e4674;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    width: 100%;
+    padding: 0%;
+}
+
+span {
+    font-size: 18px;
 }

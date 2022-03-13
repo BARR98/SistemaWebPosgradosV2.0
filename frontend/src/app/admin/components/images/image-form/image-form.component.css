@@ -1,9 +1,26 @@
 .card-header {
     display: flex;
     justify-content: center;
+    background-color: #05668d;
+    color: white;
 }
 
 .image-preview {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 16px;
+    color: #01497c;
+    font-weight: bold;
     display: flex;
     justify-content: center;
 }

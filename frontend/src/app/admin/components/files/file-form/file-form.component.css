@@ -1,0 +1,19 @@
+.card-header {
+    display: flex;
+    justify-content: center;
+    background-color: #01497c;
+    color: whitesmoke;
+    align-items: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 16px;
+    color: #01497c;
+    font-weight: bold;
+}

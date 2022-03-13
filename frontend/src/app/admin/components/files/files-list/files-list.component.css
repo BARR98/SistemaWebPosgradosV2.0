@@ -1,0 +1,48 @@
+.card {
+    width: fit-content;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 24px 22px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 24px 22px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 0px 24px 22px rgba(0, 0, 0, 0.16);
+}
+
+button {
+    color: whitesmoke;
+    background-color: #05558f;
+}
+
+.select-master {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+}
+
+mat-card {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    transition: background-color .5s;
+}
+
+button:hover {
+    color: whitesmoke;
+    background-color: #0877c7;
+}

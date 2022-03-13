@@ -1,0 +1,12 @@
+#back-button {
+    background-color: #01497c;
+    color: whitesmoke;
+    width: 100px;
+}
+
+.title {
+    background-color: #0e4674;
+    color: whitesmoke;
+    align-items: center;
+    display: flex;
+}

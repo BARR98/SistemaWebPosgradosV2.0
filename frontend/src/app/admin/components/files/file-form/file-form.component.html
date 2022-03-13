@@ -1,10 +1,10 @@
 <div class="col-lg-4 mx-auto">
     <div class="card mt-4">
-        <div class="card-header">
-            <h1>Crear nueva imagen</h1>
+        <div class="card-header ">
+            <h1>Crea nuevo documento</h1>
         </div>
         <div class="card-body">
-            <form (submit)="uploadPhoto(title,description,master)">
+            <form (submit)="uploadFile(title,description,master)">
                 <div class="form-group">
                     <select id="role" class="form-control" required #master>
                        <option *ngFor="let role of roles;let i = index" [value]="roles[i]">
@@ -18,16 +18,22 @@
                 <div class="form-group">
                     <textarea rows="2" placeholder="Descripción" class="form-control" required #description></textarea>
                 </div>
-                <div class="image-preview mt-4 mb-4">
-                    <input type="file" class="d-none " (change)="onPhotoSelected($event)" #photoInput>
-                    <img [src]=" photoSelected || '../../../../assets/images/UploadImage.png'" class="img-fluid mb-4" alt="" (click)="photoInput.click()">
-                    <p *ngIf="this.file">Nombre del archivo: {{this.file.name}}</p>
+                <div class="image-preview mt-4">
+                    <input type="file" class="d-none " (change)="onfileSelected($event)" #photoInput>
+                    <div *ngIf="fileSelected">
+                        <img src="../../../../assets/images/file2.png" class="img-fluid">
+                        <p class="mt-4">Nombre del archivo: {{file.name}}</p>
+                    </div>
+                    <div *ngIf="!fileSelected">
+                        <img [src]="  '../../../../assets/images/UploadFile.png'" class="img-fluid" alt="" (click)="photoInput.click()">
+
+                    </div>
                 </div>
-                <button class=" w-100 mt-4 btn btn-primary">
+                <button class="btn btn-primary w-100 mt-4">
                     <mat-icon>
                         upload
                     </mat-icon>
-                    Subir</button>
+                    Upload</button>
             </form>
         </div>
     </div>

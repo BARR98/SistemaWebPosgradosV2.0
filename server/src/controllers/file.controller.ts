@@ -14,8 +14,8 @@ export async function getFiles(req: Request, res: Response): Promise<Response> {
 
 export async function createFile(req: Request, res: Response): Promise<Response> {
     try{
-        const { title, description } = req.body;
-        const newFile = { title, description, imagePath: req.file.path};
+        const { title, description , master } = req.body;
+        const newFile = { title, description, master ,imagePath: req.file.path};
         const file = new MyFile(newFile);
         await file.save();
         return res.json({

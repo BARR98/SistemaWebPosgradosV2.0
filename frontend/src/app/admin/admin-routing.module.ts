@@ -9,6 +9,9 @@ import { ImagesListComponent } from './components/images/images-list/images-list
 import { ImageFormComponent } from './components/images/image-form/image-form.component';
 import { ImagePreviewComponent } from './components/images/image-preview/image-preview.component';
 import { ViewMasterImagesComponent } from './components/images/view-master-images/view-master-images.component';
+import { FilesListComponent } from './components/files/files-list/files-list.component';
+import { ViewMasterFileComponent } from './components/files/view-master-file/view-master-file.component';
+import { FileFormComponent } from './components/files/file-form/file-form.component';
 
 const routes: Routes = [
   {
@@ -46,6 +49,18 @@ const routes: Routes = [
   {
     path: 'view-master-images/:master',
     component:ViewMasterImagesComponent
+  },
+  {
+    path: 'upload-file',
+    component:FileFormComponent
+  },
+  {
+    path: 'files-list',
+    component:FilesListComponent
+  },
+  {
+    path: 'view-master-files/:master',
+    component:ViewMasterFileComponent
   },
   {
     path: '',
