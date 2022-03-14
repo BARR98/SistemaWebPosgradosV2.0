@@ -9,12 +9,12 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  URI = 'http://localhost:4000/users/user';
+  URI = 'http://localhost:4000/users';
 
   constructor(private httpClient: HttpClient) { }
 
   createUser(user:User){
-   return this.httpClient.post(this.URI, user);
+   return this.httpClient.post(this.URI , user);
   } 
   getUsers():Observable<User[]>{
     return this.httpClient.get<User[]>(this.URI)
@@ -32,7 +32,7 @@ export class UserService {
     return this.httpClient.delete(this.URI + '/' + id);
   }
 
-  updateUser(_id:string, username:string, email:string, password:string, role:number){
-    return this.httpClient.put(this.URI+'/'+_id,{username, email, password, role});       
+  updateUser(id:string, username:string, email:string, password:string, role:number){
+    return this.httpClient.put(this.URI + '/' +id, {username, email, password, role});       
   }
 }

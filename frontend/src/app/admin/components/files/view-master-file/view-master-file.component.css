@@ -5,8 +5,21 @@
 }
 
 .title {
-    background-color: #0e4674;
-    color: whitesmoke;
-    align-items: center;
     display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #0877c7;
+    font-size: 26px;
+    align-items: center;
+    height: 100px;
+}
+
+mat-card-header {
+    color: whitesmoke;
+    background-color: #3372a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 5px;
 }

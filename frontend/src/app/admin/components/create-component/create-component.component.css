@@ -79,3 +79,14 @@ mat-label {
     color: #256991;
     font-weight: bold;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #0877c7;
+    font-size: 26px;
+    align-items: center;
+    height: 100px;
+    font-weight: bold;
+}

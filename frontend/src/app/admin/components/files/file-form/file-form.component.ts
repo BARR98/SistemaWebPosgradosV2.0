@@ -45,7 +45,21 @@ export class FileFormComponent implements OnInit {
     if((title.value != '') && (description.value!='') && (this.file != null) && ( (master.value !== this.roles[0]) ) ){
       this.fileService.createFile(master.value,title.value,description.value,this.file)
       .subscribe(res => {
-        this.router.navigate(['/admin/files-list'])
+        switch (master.value) {
+          case 'MSC':
+              this.router.navigate(['/admin/view-master-files/' + master.value])
+            break;
+          case 'MARQ':
+              this.router.navigate(['/admin/view-master-files/' + master.value])
+            break;
+          case 'MADM':
+              this.router.navigate(['/admin/view-master-files/' + master.value])
+            break;
+        
+          default:
+            break;
+        }
+        //this.router.navigate(['/admin/files-list'])
       }, err => console.log(err))
       return false;
     }

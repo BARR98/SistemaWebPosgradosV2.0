@@ -43,9 +43,14 @@ button:hover {
     background-color: #b6414f;
 }
 
-mat-card-title {
-    font-size: 20px;
-    color: #003554;
+.title {
+    color: whitesmoke;
+    background-color: #0877c7;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
 }
 
 mat-label {

@@ -18,7 +18,7 @@ button {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 70%;
+    height: 30%;
 }
 
 mat-card {
@@ -45,4 +45,19 @@ button {
 button:hover {
     color: whitesmoke;
     background-color: #0877c7;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #0877c7;
+    font-size: 26px;
+    align-items: center;
+    height: 100px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
 }

@@ -7,7 +7,8 @@ import cors from 'cors'
 // Routes
 import imageRoutes from './routes/photos'
 import masterRoutes from './routes/maestrias'
-import filesRoutes from './routes//files'
+import filesRoutes from './routes/files'
+import userRoutes from './routes/users.routes'
 
 class Applicaction {
 
@@ -42,6 +43,7 @@ class Applicaction {
         this.app.use('/images', imageRoutes );
         this.app.use('/masters', masterRoutes );
         this.app.use('/files', filesRoutes );
+        this.app.use('/users', userRoutes );
     }
 
     
