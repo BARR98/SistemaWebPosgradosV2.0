@@ -1,35 +1,38 @@
-<div class="title">
-    Maestrias
+<div class="container p-0">
+    <div class="title row-sm-12 row-md-12 row-lg-12 row-xl-12">
+        Maestrias
+    </div>
+
+    <div class="row-sm-12 row-md-12 row-lg-12 row-xl-12">
+        <mat-card class="mat-elevation-z4  row-sm-12 row-md-12 row-lg-12 row-xl-12">
+            <a mat-raised-button (click)="redirectToMastersList()" id="create"> Crear nueva maestría
+                <mat-icon>add</mat-icon>
+            </a>
+
+            <table class=" table table-responsive-sm table-responsive-md">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Abreviatrua</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let maestria of masters; let i=index">
+                        <th scope="row">{{masters[i]['_id']}}</th>
+                        <td>{{masters[i]['nombre_maestria']}}</td>
+                        <td>{{masters[i]['abreviatura_maestria']}}</td>
+                        <button mat-raised-button [routerLink]="['/admin/master-edit',masters[i]['_id']]">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                        <button mat-raised-button color="warn" class="delete" (click)="deleteMaster(masters[i]['_id'])">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </mat-card>
+    </div>
 </div>
-
-<mat-card class="mat-elevation-z4">
-    <mat-card-title></mat-card-title>
-    <a mat-raised-button (click)="redirectToMastersList()" id="create"> Crear nueva maestría
-        <mat-icon>add</mat-icon>
-    </a>
-
-    <table>
-
-        <tr>
-            <th>Id</th>
-            <th>Nombre</th>
-            <th>Abreviatura</th>
-            <th></th>
-        </tr>
-        <tr *ngFor="let maestria of masters; let i=index">
-            <td>{{masters[i]['_id']}}</td>
-            <td>{{masters[i]['nombre_maestria']}}</td>
-            <td>{{masters[i]['abreviatura_maestria']}}</td>
-            <button mat-raised-button [routerLink]="['/admin/master-edit',masters[i]['_id']]">
-                <mat-icon>edit</mat-icon>
-            </button>
-            <button mat-raised-button color="warn" class="delete" (click)="deleteMaster(masters[i]['_id'])">
-                <mat-icon>delete</mat-icon>
-            </button>
-        </tr>
-    </table>
-
-
-
-
-</mat-card>

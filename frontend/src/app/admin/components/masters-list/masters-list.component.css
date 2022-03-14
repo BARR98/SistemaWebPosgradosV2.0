@@ -100,5 +100,10 @@ td {
 }
 
 table {
-    width: 100%;
+    min-width: 700px;
+}
+
+.container {
+    min-width: 800px;
+    max-width: 100%;
 }
